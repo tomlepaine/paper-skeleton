@@ -1,0 +1,64 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2015,times}
+\usepackage{hyperref} % For clickable links (internal/external)
+\usepackage{url} % For formatting web links
+\usepackage{natbib} % Might be iclr specific
+\usepackage{amsmath} % Nice math
+\usepackage{amssymb} % More nice math
+\usepackage{graphicx} % Import images
+\usepackage{subfig} % If you want subfigures
+\usepackage{wrapfig} % Wrap text arounf figures
+
+\title{Title of the paper}
+
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
+
+\author{
+Tom Le Paine\thanks{ - Authors contributed equally to this work.}, Pooya Khorrami\samethanks, Wei Han, Thomas S. Huang \\
+Beckman Institute for Advanced Science and Technology,\\
+University of Illinois at Urbana-Champaign\\
+Urbana, IL 61801\\
+\texttt{{paine1,pkhorra2,weihan3,t-huang1}@illinois.edu} \\
+}
+
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+% Abstract
+\input{./sections/abstract.tex}
+
+% Paper sections
+\section{Introduction}
+\label{sec:intro}
+\input{./sections/introduction.tex}
+
+\section{Related Work}
+\label{sec:related_work}
+\input{./sections/related-work.tex}
+
+\section{Our Approach}
+\label{sec:method}
+\input{./sections/method.tex}
+
+\section{Experiments and Analysis}
+\label{sec:experiments}
+\input{./sections/experiments.tex}
+
+\section{Conclusions}
+\label{sec:conclusions}
+\input{./sections/conclusions.tex}
+
+\subsubsection*{Acknowledgments}
+\label{sec:conclusions}
+\input{./sections/acknowledgements.tex}
+
+\bibliography{main}
+\bibliographystyle{plainnat}
+
+
+\end{document}
